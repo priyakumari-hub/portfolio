@@ -1,0 +1,59 @@
+*{
+       Background-color:rgb(320,180,180);
+       font-family: Arial,sans-serif;
+       line-height:1.6;
+      margin:0;
+      padding:0;
+}
+
+*h1
+{
+   color:rgb(100,80,80);
+}
+section
+{
+   margin:20px auto;
+   padding:20px;
+   max-width:800px;
+   box-shadow:0 2px 5px rgba(0,0,0,1);
+  font-size:100%
+}
+
+ul li
+{
+   margin:10px 0;
+}
+
+#about h2
+{
+    color:red;
+   font-size:150%
+}
+#skills h2
+{
+     color:green;
+     font-style:italic;
+    font-size:150%
+}
+
+#projects h2
+{
+     color:rgb(255,0,255);
+     font-style:"Times New Roman";
+     font-size:150%
+}
+
+#button
+{
+     background-color:rgb(250,219,88);
+     height:40%;
+    width:40%;
+   margin:10px;
+   font-size:230%
+}
+
+footer
+{
+    text-align: center;
+    padding:10px;
+}
