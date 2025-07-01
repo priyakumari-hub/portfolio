@@ -1,27 +1,43 @@
 *{
-       Background-color:rgb(320,180,180);
+       Background-color:rgb(249 249 184);
        font-family: Arial,sans-serif;
        line-height:1.6;
       margin:0;
       padding:0;
+      text-decoration:none;
+}
+header nav
+{
+     padding:2.5rem;
+    background-color:rgb(48 31 93);
+    display:flex;
+     justify-content:flex-end;
+    text-transform:uppercase;
+}
+header nav a
+{
+   margin:0px 20px;
+   text-decoration:none;
+ color:limegreen;
+ Background-color:rgb(48 31 93);
 }
 
-*h1
+h1
 {
-   color:rgb(100,80,80);
+   color:rgb(0,128,128);
 }
 section
 {
    margin:20px auto;
    padding:20px;
-   max-width:800px;
+   max-width:1000px;
    box-shadow:0 2px 5px rgba(0,0,0,1);
   font-size:100%
 }
 
 ul li
 {
-   margin:10px 0;
+   margin:10px 20;
 }
 
 #about h2
@@ -43,17 +59,31 @@ ul li
      font-size:150%
 }
 
-#button
-{
-     background-color:rgb(250,219,88);
-     height:40%;
-    width:40%;
-   margin:10px;
-   font-size:230%
-}
-
 footer
 {
     text-align: center;
     padding:10px;
 }
+
+.project
+{
+   min-height:190px; 
+}
+
+.b1
+{
+   padding:10px 30px;
+   margin-right:20px;
+   text-decoration:none;
+   background-color:59d4e6;
+   position:relative;
+   top:30px;
+   color:black;
+   font-weight:bold;
+}
+
+.contact h2
+{
+  color:rgb(123,67,179);
+}
+
