@@ -1,59 +1,172 @@
-*{
-       Background-color:rgb(320,180,180);
-       font-family: Arial,sans-serif;
-       line-height:1.6;
-      margin:0;
-      padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color:rgb(209, 218, 250); /* Clean, slightly off-white */
+  color: #1a1a1a;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-*h1
-{
-   color:rgb(100,80,80);
-}
-section
-{
-   margin:20px auto;
-   padding:20px;
-   max-width:800px;
-   box-shadow:0 2px 5px rgba(0,0,0,1);
-  font-size:100%
-}
-
-ul li
-{
-   margin:10px 0;
-}
-
-#about h2
-{
-    color:red;
-   font-size:150%
-}
-#skills h2
-{
-     color:green;
-     font-style:italic;
-    font-size:150%
+/* --- Elegant Floating Navbar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 20px; 
+  margin: 0 5%;
+  border-radius: 50px;
+  width:80vw;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
-#projects h2
-{
-     color:rgb(255,0,255);
-     font-style:"Times New Roman";
-     font-size:150%
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
-#button
-{
-     background-color:rgb(250,219,88);
-     height:40%;
-    width:40%;
-   margin:10px;
-   font-size:230%
+.nav-links a {
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
 }
 
-footer
+.nav-links a:hover {
+  color: #000;
+  font-size:1.2rem;
+}
+
+/* --- Minimalist Hero --- */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(60deg,#000b3a,#1c2d53,white,#38bdf8,#8ca2c2,#64748b);
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 0;
+  letter-spacing: -3px;
+  color: #111;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+  color: #ff4d6d; /* A pop of color inspired by resin pigments */
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.btn {
+  background: #111;
+  padding: 16px 35px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 90px;
+  transition: 0.3s;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  background: #f89a0c;
+}
+
+/* --- Skills as Modern Tags --- */
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 40px 0;
+}
+
+.skill {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  border-color: #111;
+  color: #111;
+  background: #f9f9f9;
+}
+
+/* --- Bento-Style Project Cards --- 
+#projects
 {
-    text-align: center;
-    padding:10px;
+   background-color:rgb(245, 200, 208);
+}*/
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 50px 8%;
+}
+
+.project-card {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #f0f0f0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.project-card p {
+  color: #777;
+  font-size: 1rem;
+}
+
+.project-card:hover {
+  border-color: transparent;
+  box-shadow: 0 30px 60px rgba(4, 66, 236, 0.808);
+  transform: scale(1.02);
+}
+
+.project-card a{
+   background-color: rgb(6, 72, 99);
+   border-radius:40px;
+   color: white;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 60px;
+  text-align: center;
+  font-weight: 600;
+  color:white;
+  text-align: center;
+  background-color: rgb(4, 110, 110);
 }

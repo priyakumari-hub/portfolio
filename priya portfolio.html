@@ -1,37 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>MY PORTFOLIO</title>
-<link rel="stylesheet" href="priya portfolio.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Priya Kumari | Software Developer</title>
+      <link rel="stylesheet" href="priya portfolio.css">
 </head>
 <body>
-      <header>
-            <h1>WELCOME TO MY PORTFOLIO</h1>
-            <p>Hi, I'm Priya Kumari an aspiring software development!</p>
-     </header>
-      <section id="about">
-      <h2>ABOUT ME</h2>
-      <p>I'm currently learning software development through this intenship program. I enjoy coding, problem-solving and buiding projects!</p>
-      </section>
-     <section id="skills">
-     <h2>SKILLS</h2>
-     <ul>
-         <li>HTML & CSS</li>
-         <li>Python</li>
-         <li>JavaScript(Basic)</li>
-     </ul>
-     </section>
-     <section id="projects">
-     <h2>PROJECTS</h2>
-     <ul>
-          <li><a href="C:\python\area.py">Rectangle Area Calculator</a></li>
-          <li><a href="C:\python\temperature.py">Temperature Convertor</a></li>
-     </ul>
-     </section>
-     <button id="button" onclick=alert("Welcome")>Click me</button>
-     <footer>
-            <p>@ 2025 Priya Kumari. All rights reserved.</p>
-    </footer>
-<script>
-</script>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+      <h2 class="logo">Priya Kumari</h2>
+      <ul class="nav-links">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+
+
+        <!-- Hero Section -->
+      <section id="home" class="hero">
+         <div class="hero-text">
+         <h1>Hi, I'm Priya Kumari</h1>
+         <h3>Aspiring Software Developer</h3>
+         <p>Computer Science student passionate about building web applications using modern technologies.</p>
+        <br>
+      <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#skills" class="btn">View Skill</a>
+      </div>
+   </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="section">
+          <h2>About Me</h2>
+          <p>I am a Computer Science student interested in software development and building real-world 
+            applications. I enjoy working with HTML, CSS, JavaScript, Python and Flask to create useful 
+            digital solutions.I am an enthusiastic and passionate Engineering student,
+            eager to explore and master emerging trends and techniques in technology. I adapt quickly to
+            diverse working environments and am committed to continuous learning, problem-solving, and
+            contributing innovative solutions. I seek opportunities to apply my technical knowledge and 
+            collaborative skills to drive organizational success while advancing my professional growth.
+          </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+          <h2>Skills</h2>
+          <div class="skills-container">
+             <div class="skill">HTML</div>
+             <div class="skill">CSS</div>
+             <div class="skill">JavaScript</div>
+             <div class="skill">Python</div>
+             <div class="skill">Flask</div>
+             <div class="skill">SQL</div>
+             <div class="skill">Java</div>
+             <div class="skill">Prompt Engineering</div>
+</div>
+
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="section">
+<h2>Projects</h2>
+<div class="projects-container">
+            <div class="project-card">
+                <h3>Groundwater Depletion & Recharge Prediction Model </h3>
+                <p>Developed a predictive machine learning model using a Random Forest Regressor to analyze and forecast groundwater levels.</p>
+                <a href="https://github.com/priyakumari-hub/groundwater-depletion-recharge-">GitHub</a>
+            </div>
+            <div class="project-card">
+               <h3>Sky Fusion</h3>
+                <p>Weather + space data platform displaying atmospheric and space information.</p>
+                <a href="https://github.com/priyakumari-hub/skyfusion">GitHub</a>
+            </div>
+            <div class="project-card">
+               <h3>Solar System Simulator</h3>
+               <p>Created an interactive 3D visualization of the solar system featuring dynamically moving planets and realistic textures</p>
+                <a href="https://github.com/priyakumari-hub/solar">GitHub</a>
+            </div>
+            <div class="project-card">
+               <h3>Pitch Karo UX/UI</h3>
+               <p>Created a home page UI for a website "Pitch karo" with Framer Ai </p>
+                <a href="https://pretty-thanks-842765.framer.app/">GitHub</a>
+            </div>
+
+</div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="section">
+       <h2>Contact</h2>
+       <p>Email: priyakumari@email.com</p>
+       <p>GitHub:<a href="https://github.com/priyakumari-hub">github.com/priyakumari-hub</a></p>
+</section>
+<footer>
+      <p>© 2026 Priya Kumari</p>
+</footer>
+
+
 </body>
 </html>
